@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàng sắp về</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            color: #111;
+            line-height: 1.15;
+        }
+        #canh{
+            max-width: 1170px;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+        .caca{
+            padding-top: 50px;
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h4{
+            font-size: 20px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+            
+        }
+        ul.products li .product-top{
+            position:relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display: block;
+        }
+        ul.products :hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.order-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 0.85;
+        }
+        ul.products li:hover a.order-now{
+            bottom: 0px;
+        }
+
+        ul.products li .product-info{
+            padding: 10px 0px;
+
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+
+        }
+        ul.products li .product-info .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li class="home"><a href="./index.html">Home</a></li>
+                <li><a href="./GiayNamNangDong.html">Men</a></li>
+                <li><a href="./GiayNuThanhLich.html">Women</a></li>
+                <li><a href="./HangSapVe.html">New</a></li>
+                <li>
+                    <a href="">More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="./tintuc.html">Tin tức</a></li>
+                        <li><a href="./kinhnghiemhay.html">Kinh nghiệm</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search">
+                <i class="search-icon ti-search" id="search-btn"></i>
+            </div>
+            <div class="login">
+                <a href="./dangnhap.html" class="login-icon fa-solid fa-user"></a>
+            </div>
+            <div class="search-form">
+                <input type="search" class="search-input" id="search-box" placeholder="search here...">
+            </div>
+        </div>
+    <div id="canh">
+        <div class="caca">
+            <h4>Sản phẩm sắp về</h4>
+        </div>
+
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/women1.jpg " alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Women</a>
+                        <a href="" class="product-name"> Nike Air Max Pre-Day </a>
+                        <div class="product-price">4,109,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/mennike1.jpg" alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Men</a>
+                        <a href="" class="product-name"> Nike Air Max Impact 3 </a>
+                        <div class="product-price">2,649,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/women2.jpg" alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Women</a>
+                        <a href="" class="product-name"> Nike Air Max Terrascape 90 </a>
+                        <div class="product-price">4,409,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/mennike2.jpg " alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Men</a>
+                        <a href="" class="product-name">Nike Air Max 1 Premium</a>
+                        <div class="product-price">4,109,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/adidaswomen1.jpg " alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Women</a>
+                        <a href="" class="product-name"> NMD R1 Hazy Sky </a>
+                        <div class="product-price">2,590,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/adidasmen1.jpg " alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Men</a>
+                        <a href="" class="product-name"> NMD R1 White Navy Grey</a>
+                        <div class="product-price">2,890,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/adidaswomen2.jpg " alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Women</a>
+                        <a href="" class="product-name"> Adidas Alphatorsion 2.0</a>
+                        <div class="product-price">1,995,000 VND</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="./pic/Hang Sap Ve/adidasmen2.jpg" alt="">
+                        </a>
+                        <a href="" class="order-now">Đặt trước ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Men</a>
+                        <a href="" class="product-name"> Adidas Grand Court SE </a>
+                        <div class="product-price">2,000,000 VND</div>
+                    </div>
+                </div>      
+        </ul>      
+    </div>
+    <div id="footer">
+        <div class="inner clearfix">
+            <div class="about-us">
+              <h3>ĐỊA CHỈ CỬA HÀNG</h3>
+              <p>235 Hoàng Quốc Việt, Cổ Nhuế<br>
+               Bắc Từ Liêm, hà Nội<br>
+                Hotline: 0931 910 JQK</p>
+            </div>
+      
+            <div class="info-link">
+              <h3>Quick Links</h3>
+              <nav>
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./GiayNamNangDong.html">Men</a></li>
+                  <li><a href="./GiayNuThanhLich.html">Women</a></li>
+                </ul>
+              </nav>
+            </div>
+      
+            <div class="follow-us">
+              <h3>Follow Us</h3>
+              <ul>
+                <li class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li class="google-plus"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <p class="copyright">Shop CATUSO Sneaker</p>
+    </div>
+</div>
+
+<script src="jscript.js"></script>
+</body>
+</html>

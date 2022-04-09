@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tin Tức</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  #header{
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    display: inline-block;
+    margin-left: 0;
+}
+#nav .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav .home {
+    margin-left: 273px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0px 24px;
+    display: block;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    display: inline-block;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #333;
+    padding: 0 12px;
+}
+
+
+
+#header .search {
+    float:right;
+    padding: 0 21px;
+}
+
+#header .search:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#header .search-box .search-icon1 {
+    color: #000;
+}
+#header .search-form {
+    position: absolute;
+    top:115%; right: 1%;
+    background: #fff;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    outline: none;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 3px;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+#header .search-form.active{
+    transform: scaleY(1);
+}
+
+#header .search-form .search-input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color:#000;
+    padding:10px;
+    text-transform: none;
+    border: none;
+}
+
+
+#header .search-form label:hover {
+    color: #ffce3e;
+}
+
+#header .login {
+    float:right;
+    padding: 0 21px;
+    position: relative;
+}
+
+#header .login-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+}
+#header .login:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#nav .subnav li:hover {
+    color: rgb(5, 5, 5);
+    background-color: #ccc;
+}
+  body {
+    background-color:#818e96;
+    color: #fff;
+    font-family: 'Hurricane', cursive;
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ff8b10 rgb(255, 139, 16);
+    box-shadow: 0 1px 2px 0  #ff7200 rgb(255, 114, 0) inset;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 100%;
+    border-radius: 2px;
+    font-family: 'Red Hat Mono', monospace;
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 40px;
+    border-radius: 5px;
+  }
+  textarea {
+    font-family: 'Red Hat Mono', monospace;
+    padding-top: 10px;
+  }
+  button {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    color: #1a2d64de rgba(231, 236, 236);
+    cursor: pointer;
+    min-width: 135px;
+    padding: 11px 10px;
+    text-align: center;
+    transition: 0.3s background-color;
+    border-radius: 2px;
+    font-family: 'Red Hat Mono', monospace;
+  }
+  button:hover {
+    background-color: rgb(173, 135, 64);
+  }
+  .clearfix {
+    zoom: 1;
+  }
+  .clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+  }
+  
+  .contact-us {
+    margin: 30px auto;
+    width: 1140px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .contact-us .info {
+    float: left;
+    width: 380px;
+    font-family: 'Red Hat Mono', monospace;
+  }
+  .contact-us h2 {
+    color: rgb(15, 49, 18);
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 42px;
+    position: relative;
+  }
+  .contact-us h2:after {
+    background-color: #fff;
+    bottom: -5px;
+    content: "";
+    display: block;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    position: absolute;
+  }
+  .contact-us h3 {
+    color: rgb(58, 43, 11);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    font-family: 'Red Hat Mono', monospace;
+  }
+  .contact-us .contact-list li {
+    line-height: 1.2;
+    margin-bottom: 36px;
+    padding-left: 48px;
+    position: relative;
+  }
+  .contact-us .contact-list li i {
+    font-size: 27px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 34px;
+  }
+  .contact-us .contact-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Red Hat Mono', monospace;
+  }
+  .contact-us .contact-form {
+    float: right;
+    width: 750px;
+  }
+  .contact-us .contact-form p {
+    margin-bottom: 15px;
+  }
+  .contact-us .contact-form .submit-btn {
+    margin-top: -10px;
+  }
+  .contact-us .contact-form textarea {
+    height: 114px;
+    border-radius: 5px;
+  }
+ </style>
+</head>
+<body>
+  <div id="main">
+    <div id="header">
+        <ul id="nav">
+            <li class="home"><a href="./index.html">Home</a></li>
+            <li><a href="./GiayNamNangDong.html">Men</a></li>
+            <li><a href="./GiayNuThanhLich.html">Women</a></li>
+            <li><a href="./HangSapVe.html">New</a></li>
+            <li>
+                <a href="">More
+                    <i class="ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="./tintuc.html">Tin tức</a></li>
+                    <li><a href="./kinhnghiemhay.html">Kinh Nghiệm</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search">
+          <i class="search-icon ti-search" id="search-btn"></i>
+        </div>
+        <div class="login">
+            <a href="./dangnhap.html" class="login-icon fa-solid fa-user"></a>
+        </div>
+        <div class="search-form">
+            <input type="search" class="search-input" id="search-box" placeholder="search here...">
+        </div>
+    </div>
+  <section class="contact-us">
+    <h2>CONTACT US</h2>
+    <div class="clearfix">
+      <div class="info">
+        <h3>Contact Info</h3>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-pin"></i> 235 Hoang Quoc Viet, Co Nhue<br>
+            Bac Tu Liem, Ha Noi, Viet Nam</li>
+          <li><i class="fa-solid fa-envelope-open"></i> catusostore@real.com</li>
+          <li><i class="fa-solid fa-phone"></i><a href="tel:+ 84 931 910 JQK">+84 931 910 JQK</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-form">
+        <h3>Having Any Query! Or Book an appointment</h3>
+        <form method="" action="">
+          <p><input type="text" name="name" placeholder="Your Name" value=""></p>
+          <p><input type="email" name="email" placeholder="Your Email" value=""></p>
+          <p><input type="text" name="subject" placeholder="Subject" value=""></p>
+          <p><textarea name="message" placeholder="Message" cols="50" rows="10"></textarea></p>
+          <p class="submit-btn"><button type="submit">Send Message</button></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="jscript.js"></script>
+</body>
+</html>

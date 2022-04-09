@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CATUSO SHOES STORE</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li class="home"><a href="./index.html">Home</a></li>
+                <li><a href="./GiayNamNangDong.html">Men</a></li>
+                <li><a href="./GiayNuThanhLich.html">Women</a></li>
+                <li><a href="./HangSapVe.html">New</a></li>
+                <li>
+                    <a href="">More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="./tintuc.html">Tin tức</a></li>
+                        <li><a href="./kinhnghiemhay.html">Kinh Nghiệm</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search">
+                <i class="search-icon ti-search" id="search-btn"></i>
+            </div>
+            <div class="login">
+                <a href="./dangnhap.html" class="login-icon fa-solid fa-user"></a>
+            </div>
+            <div class="search-form">
+                <input type="search" class="search-input" id="search-box" placeholder="search here...">
+            </div>
+        </div>
+      <div class="bg">
+        <div class="main1">
+
+          <form action="" method="POST" class="form" id="form-1">
+            <h3 class="heading">Đăng ký</h3>
+            <p class="desc">CATUSO Sneaker ❤️</p>
+    
+            <div class="spacer"></div>
+    
+            <div class="form-group">
+              <label for="fullname" class="form-label">Tên đầy đủ</label>
+              <input id="fullname" name="fullname" rules="required" type="text" placeholder="VD: Lê Hoàng Sơn" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" rules="required|email" type="text" placeholder="VD: let02hb@gmail.com" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="password" class="form-label">Mật khẩu</label>
+              <input id="password" name="password" rules="required|min:6" type="password" placeholder="Nhập mật khẩu" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <div class="form-group">
+              <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+              <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+              <span class="form-message"></span>
+            </div>
+    
+            <button class="form-submit">Đăng ký</button>
+            <p class="qs">Bạn đã có tài khoản?
+            <a class="login-p" href="./dangnhap.html">Đăng nhập</a></p>
+          </form>
+      </div>  
+        <div id="footer">
+            <div class="inner clearfix">
+                <div class="about-us">
+                  <h3>ĐỊA CHỈ CỬA HÀNG</h3>
+                  <p>Tầng 3, TTTM Mỹ Đình Plaza 2<br>
+                    Số 2 Nguyễn Hoàng, Nam Từ Liêm, Hà Nội<br>
+                    Hotline: 0977179889</p>
+                </div>
+          
+                <div class="info-link">
+                  <h3>Quick Links</h3>
+                  <nav>
+                    <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./GiayNamNangDong.html">Men</a></li>
+                      <li><a href="./GiayNuThanhLich.html">Women</a></li>
+                    </ul>
+                  </nav>
+                </div>
+          
+                <div class="follow-us">
+                  <h3>Follow Us</h3>
+                  <ul>
+                    <li class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="google-plus"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="linkedin"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <p class="copyright">Shop CATUSO Sneaker</p>
+        </div>
+    </div>
+
+    <script src="jscript.js"></script>
+    <script>
+      var form = new Validator('#form-1');
+      form.onSubmit = function (formData){
+        console.log(formData);
+      }
+      
+    </script>
+</body>
+</html>
